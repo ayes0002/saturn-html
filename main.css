@@ -1,0 +1,112 @@
+@charset "utf-8";
+/*****************************
+Colours
+main background: #222;
+content background:#444;
+footer background: #333;
+borders on header and main: #666;
+main text: #d4d4d4;
+header text: #eee;
+footer text: #999;
+anchor text: gold;
+anchor hover: #fff;
+text shadows - #000 (bottom right) and gold (top left)
+
+Fonts
+'Helvetica Neue', Calibri, Verdana, sans-serif;
+
+Images
+http://griffis.edumedia.ca/mad9013/html-only/saturn.v1.jpg
+******************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-size: 4vh; /* default font-size = 1.0rem */
+    background-color: #222;
+    font-size: 25px;
+    font-family: 'Helvetica Neue', Calibri, Verdana, sans-serif;
+}
+h1{
+    color: #eee;
+    font-size: 7vh;
+    text-align: left;
+    text-shadow: -1px -1px gold, 1.5px 1px #000;
+    font-family: sans-serif;
+}
+h3{
+	font-size: 4vh;
+    text-color: #eee;
+    text-align: left;
+    display: block;
+    background-color: #444;
+    padding: 5vh 10px 3vh;
+    border-top-style: solid;
+    border-top-color: #666;
+    border-top-width: 50px;
+}
+p{
+    background-color: #444;
+    font-size: 2.5vh;
+    line-height: 30px;
+    padding: 10px;
+    padding-bottom: 40px;
+    font-family: Calibri;
+    
+}
+nav a, nav a:link, nav a:visited{
+    display:block;
+    text-decoration: none;
+    color: gold;
+    
+}
+nav a:hover, a:active{
+    background-color:#fff;
+}
+nav ul{
+	display:block;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-top-style: solid;
+    border-top-color: #666;
+    border-top-width: 10px;
+    
+}
+nav li{
+    float:left;
+    width:20%;
+    display:block;
+    background-color: #333;
+}
+#wrapper{
+    width:90%;
+    margin:0 auto;
+    color: #555;
+}
+#masthead{
+    border-color:#666;
+    padding: 10px;
+    line-height: 3.5;
+    background: url("http://griffis.edumedia.ca/mad9013/html-only/saturn.v1.jpg") no-repeat 50% 0%;
+    background-size: 100vh 40vh;
+}
+#main{
+    border-color:#222;
+    color: #d4d4d4;
+}
+#footer{
+    
+}
+#footer p{
+    font-size: 2vh;
+    color:#999;
+    background-color: #333;
+    padding: 30px 20px;
+    line-height: 15px;
+}
+#footer a{
+    color: gold;
+}
